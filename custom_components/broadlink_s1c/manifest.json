@@ -1,7 +1,7 @@
 {
   "domain": "broadlink_s1c",
   "name": "Broadlink S1C Alarm Hub",
-  "codeowners": ["@GITHUB_USER"],
+  "codeowners": ["tamas-unter"],
   "config_flow": true,
   "documentation": "https://github.com/tamas-unter/broadlink_s1c",
   "integration_type": "hub",
