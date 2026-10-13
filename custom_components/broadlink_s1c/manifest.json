@@ -1,0 +1,13 @@
+{
+  "domain": "broadlink_s1c",
+  "name": "Broadlink S1C Alarm Hub",
+  "codeowners": ["@GITHUB_USER"],
+  "config_flow": true,
+  "documentation": "https://github.com/tamas-unter/broadlink_s1c",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/tamas-unter/broadlink_s1c/issues",
+  "loggers": ["broadlink"],
+  "requirements": ["python-broadlink==1.0.6"],
+  "version": "0.1.0"
+}

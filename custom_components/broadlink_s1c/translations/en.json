@@ -1,0 +1,65 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Broadlink S1C Alarm Hub",
+        "description": "Enter the IP address of the hub. The MAC address is optional: if you leave it empty it is read from the hub.",
+        "data": {
+          "host": "IP address or host name",
+          "mac": "MAC address (optional)"
+        },
+        "data_description": {
+          "host": "Use a fixed IP address (DHCP reservation) so that the address does not change.",
+          "mac": "For example 34:EA:34:C8:46:D2. Only needed if automatic detection fails."
+        }
+      },
+      "reconfigure": {
+        "title": "Change the hub address",
+        "data": {
+          "host": "IP address or host name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "The hub did not answer. Check the IP address and that the hub is powered and on the same network.",
+      "invalid_auth": "The hub refused the authentication. If it is locked in the Broadlink app, unlock it first.",
+      "invalid_mac": "This is not a valid MAC address.",
+      "not_supported": "This device is not an S1C alarm hub.",
+      "unknown": "Unexpected error, see the Home Assistant log."
+    },
+    "abort": {
+      "already_configured": "This hub is already configured.",
+      "reconfigure_successful": "The hub address was updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Polling",
+        "data": {
+          "scan_interval": "Polling interval (seconds)"
+        },
+        "data_description": {
+          "scan_interval": "How often the hub is asked for the state of its sensors. Short key fob presses can be missed when this is long."
+        }
+      }
+    }
+  },
+  "entity": {
+    "event": {
+      "button": {
+        "name": "Button",
+        "state_attributes": {
+          "event_type": {
+            "state": {
+              "disarm": "Disarm",
+              "arm_away": "Arm away",
+              "arm_home": "Arm home",
+              "sos": "SOS"
+            }
+          }
+        }
+      }
+    }
+  }
+}

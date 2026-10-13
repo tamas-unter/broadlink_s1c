@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="S1C alarm hub, DIY integration">
+  <rect x="6" y="6" width="244" height="244" rx="56" fill="#D6F1FA" stroke="#2B7A9B" stroke-width="8"/>
+  <!-- sensors around the hub -->
+  <g stroke="#2B7A9B" stroke-width="9" stroke-linecap="round">
+    <line x1="128" y1="112" x2="62" y2="62"/>
+    <line x1="128" y1="112" x2="194" y2="62"/>
+    <line x1="128" y1="112" x2="62" y2="166"/>
+  </g>
+  <g fill="#2B7A9B">
+    <circle cx="62" cy="62" r="19"/>
+    <circle cx="194" cy="62" r="19"/>
+    <circle cx="62" cy="166" r="19"/>
+  </g>
+  <g fill="#D6F1FA">
+    <circle cx="62" cy="62" r="7"/>
+    <circle cx="194" cy="62" r="7"/>
+    <circle cx="62" cy="166" r="7"/>
+  </g>
+  <!-- the hub -->
+  <circle cx="128" cy="112" r="36" fill="#2B7A9B"/>
+  <circle cx="128" cy="112" r="15" fill="#D6F1FA"/>
+  <!-- DIY badge -->
+  <rect x="124" y="176" width="112" height="52" rx="26" fill="#F2994A"/>
+  <text x="180" y="212" text-anchor="middle" font-family="DejaVu Sans, Verdana, Arial, Helvetica, sans-serif" font-weight="700" font-size="34" letter-spacing="2" fill="#FFFFFF">DIY</text>
+</svg>
